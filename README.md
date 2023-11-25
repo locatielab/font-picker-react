@@ -1,5 +1,5 @@
 # Font Picker for React
-
+## Forked from "samuelmeuli/font-picker-react"
 **A simple, customizable font picker allowing users to preview, select and use Google Fonts on your website.**
 
 - Simple setup
