@@ -28,8 +28,7 @@
 		"./dist/"
 	],
 	"scripts": {
-		"prepare": "run-s build:* && mv ./dist/* ./ && rm -rf ./dist",
-		"start": "npm-run-all build:clean build:ts --parallel start:*",
+		"start": "run-s build:* && mv ./dist/* ./ && rm -rf ./dist",
 		"start:ts": "rollup --config --sourcemap --watch",
 		"start:storybook": "start-storybook --port 3000",
 		"build": "run-s build:*",
