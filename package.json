@@ -1,6 +1,6 @@
 {
 	"name": "font-picker-react",
-	"version": "3.5.2",
+	"version": "3.5.3",
 	"description": "Font selector component for Google Fonts",
 	"author": {
 		"name": "Samuel Meuli",
@@ -28,6 +28,7 @@
 		"./dist/"
 	],
 	"scripts": {
+		"prepare": "run-s build:* && mv ./dist/* ./ && rm -rf ./dist",
 		"start": "npm-run-all build:clean build:ts --parallel start:*",
 		"start:ts": "rollup --config --sourcemap --watch",
 		"start:storybook": "start-storybook --port 3000",
